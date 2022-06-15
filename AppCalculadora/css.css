@@ -1,0 +1,39 @@
+#ovTXT_Resultado {
+	font-size: 30px;
+	font-weight: bold;
+	box-shadow: none;
+	border: 2px solid #CCC;
+	border-radius: 0px !important;
+	text-align: right;
+}
+
+.btn {
+	width: 100%;
+	border-radius: 0px !important;
+	font-size: 40px;
+	height: 100px;
+}
+
+.col-md-3, .col-md-6, .col-md-12 {
+	padding: 5px !important;
+}
+
+.lbl-resultado{
+	font-size: 20px;
+}
+
+.lbl-negrito{
+	font-weight: bold;
+	color: red;
+}
+
+.lbl-tipo{
+	color: blue;
+	font-size: 30px;
+	background: gray;
+}
+
+.row-footer{
+	margin:	0px !important;
+	text-align: center;
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+		      content="width=device-width,
+			           initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" 
+		      type="text/css"
+			  href="fontawesome-free-5.15.4-web/css/all.css" />
+		
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="bootstrap.bundle.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div id="modal-cadastro" class="modal" tabindex="-1">
+		  <div class="modal-dialog modal-xl">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title">Adicionar Empresa</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+			  
+				<ul class="nav nav-tabs" id="myTab">
+				  <li class="nav-item">
+					<button class="nav-link active"
+					        id="empresa-tab" 
+							data-bs-toggle="tab" 
+							data-bs-target="#empresa" 
+							type="button">Dados Empresa</button>
+				  </li>
+				  <li class="nav-item">
+					<button class="nav-link" 
+					        id="filial-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#filial"
+							type="button">Filial</button>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="empresa">
+					<div class="form-group">
+						<div class="row">
+							<!-- Colunas -->
+							<div class="col-md-2">
+								<label>CODIGO</label>
+								<input type="text"
+								id="ovTXT_Codigo"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-8">
+								<label>NOME FANTASIA</label>
+								<input type="text"
+								id="ovTXT_NomeFantasia"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-2">
+								<label>DATA FUNDACAO</label>
+								<input type="date"
+								id="DATE_DataFundacao"
+								class="form-control" />
+							</div>
+						</div>
+		
+						<div class="row">
+							<!-- Colunas -->
+							<div class="col-md-8">
+								<label>RAZAO SOCIAL</label>
+								<input type="text"
+								id="ovTXT_RazaoSocial"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-2">
+								<input type="checkbox"
+								id="CHECKBOX_AtivaDesativa"
+								class="form-check-input">
+								<label class="form-check-label" for="inline">
+								ATIVA
+								</label>	
+							</div>	
+		
+							<div class="col-md-2">	
+								<input type="checkbox" 
+								id="gridCheck"
+								class="form-check-input">
+								<label class="form-check-label" for="gridCheck">
+								COOPERATIVA
+								</label>						  
+							</div>
+						</div>
+		
+						<div class="row">
+							<div class="col-md-2">
+								<label>FUNCIONARIOS</label>
+								<input type="text"
+								id="ovTXT_Funcioanarios"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-2">
+								<label>FATURAMENTO</label>
+								<input type="text"
+								id="ovTXT_Faturamento"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-3">
+								<label>Capital Social</label>
+								<input type="text"
+								id="ovTXT_CapitalSocial"
+								class="form-control" />
+							</div>
+							
+							<div class="col-md-3">
+								<label>Inscricao Estadual</label>
+								<input type="text"
+								id="ovTXT_InscricaoEstadual"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-2">
+								<label>CNPJ</label>
+								<input type="text"
+								id="ovTXT_CNPJ"
+								class="form-control" />
+							</div>
+						</div>
+		
+						<div class="row">
+							<div class="col-md-6">
+								<label>CIDADE</label>
+								<input type="text"
+								id="ovTXT_Cidade"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-3">
+								<label>CEP</label>
+								<input type="text"
+								id="ovTXT_CEP"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-3">
+								<label>Bairro</label>
+								<input type="text"
+								id="ovTXT_Bairro"
+								class="form-control" />
+							</div>
+						</div>
+		
+						<div class="row">
+							<div class="col-md-12">
+								<label>Endereco</label>
+								<input type="text"
+								id="ovTXT_Endereco"
+								class="form-control" />
+							</div>
+						</div>
+		
+						<div class="row">
+							<div class="col-md-5">
+								<label>Descricao</label>
+								<input type="text"
+								id="ovTXT_Descricao"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-4">
+								<label>E-mail</label>
+								<input type="text"
+								id="ovTXT_Email"
+								class="form-control" />
+							</div>
+		
+							<div class="col-md-3">
+								<label>Telefone</label>
+								<input type="text"
+								id="ovTXT_Telefone"
+								class="form-control" />
+							</div>					
+						</div>
+					</div>
+				  </div>
+
+				  <div class="tab-pane fade" id="filial">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-2">
+									<label>CODIGO</label>
+									<input type="text"
+									id="ovTXT_CodigoFilial"
+									class="form-control" />
+								</div>
+			
+								<div class="col-md-2">
+									<label>DESCRICAO</label>
+									<input type="text"
+									id="ovTXT_DescricaoFilial"
+									class="form-control" />
+								</div>
+			
+								<div class="col-md-2">
+									<label>SIGLA</label>
+									<input type="text"
+									id="ovTXT_SiglaFilial"
+									class="form-control" />
+								</div>
+		
+								<div class="col-md-2">
+									<label>CNPJ</label>
+									<input type="text"
+									id="ovTXT_CNPJFilial"
+									class="form-control" />
+								</div>
+		
+								<div class="col-md-2">
+									<label>INSCRICAO ESTADUAL</label>
+									<input type="text"
+									id="ovTXT_InscricaoEstadualFilial"
+									class="form-control" />
+								</div>
+		
+								<div class="col-md-2">
+									<input type="checkbox"
+									id="CHECKBOX_AtivaDesativaFilial"
+									class="form-check-input">
+									<label class="form-check-label" for="inline">
+									ATIVA
+									</label>	
+								</div>	
+							</div>
+		
+							<div class="row">
+								<div class="col-md-4">
+									<label>CIDADE</label>
+									<input type="text"
+									id="ovTXT_CidadeFilial"
+									class="form-control" />
+								</div>
+		
+								<div class="col-md-3">
+									<label>CEP</label>
+									<input type="text"
+									id="ovTXT_CEPFilial"
+									class="form-control" />
+								</div>
+		
+								<div class="col-md-2">
+									<label>BAIRRO</label>
+									<input type="text"
+									id="ovTXT_BairroFilial"
+									class="form-control" />
+								</div>
+		
+								<div class="marcar col-md-3">
+									<input type="checkbox"
+									id="CHECKBOX_CentroDistribuicaoFilial"
+									class="form-check-input">
+									<label class="form-check-label" for="inline">
+									CENTRO DE DISTRIBUICAO
+									</label>	
+								</div>	
+							</div>
+		
+							<div class="row">
+								<div class="col-md-5">
+									<label>ENDERECO</label>
+									<input type="text"
+									id="ovTXT_EnderecoFilial"
+									class="form-control" />
+								</div>
+								
+								<div class="col-md-3">
+									<label>Telefone</label>
+									<input type="text"
+									id="ovTXT_TelefoneFilial"
+									class="form-control" />
+								</div>
+		
+								<div class="col-md-4">
+									<label>E-mail</label>
+									<input type="text"
+									id="ovTXT_EmailFilial"
+									class="form-control" />
+								</div>
+							</div>									
+						</div>
+					</div>
+				</div>
+			
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" 
+						class="btn btn-secondary"
+						data-bs-dismiss="modal">
+						<i class="fa fa-times"></i>
+						Fechar</button>
+				<button type="button"
+						id="ovBTN_Salvar"
+				        class="btn btn-primary">
+						<i class="fa fa-save"></i>
+						Salvar</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+			<h3>Formulário de Produtos</h3>
+			<div class="form-group pull-right">
+				<button type="button"
+				        id="ovBTN_Adicionar"
+				        class="btn btn-primary">
+						<i class="fa fa-red fa-cart-plus"></i>
+						Adicionar
+						</button>				
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-12">
+						<table id="ovTR_Dados" class="table">
+							<thead>
+								<th>Código</th>
+								<th>Descrição</th>
+								<th class="pull-right">Ações</th>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

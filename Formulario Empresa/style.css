@@ -1,0 +1,13 @@
+.pull-right {
+	text-align: right;
+}
+
+#ovBTN_Login {
+	margin-top: 10px;	
+}
+
+#container-login {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 15%;	
+}

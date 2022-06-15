@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+		      content="width=device-width,
+			           initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" 
+		      type="text/css"
+			  href="fontawesome-free-5.15.4-web/css/all.css" />
+		
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="bootstrap.bundle.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div id="modal-cadastro" class="modal" tabindex="-1">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title">Modal title</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+			  
+				<ul class="nav nav-tabs" id="myTab">
+				  <li class="nav-item">
+					<button class="nav-link active"
+					        id="empresa-tab" 
+							data-bs-toggle="tab" 
+							data-bs-target="#empresa" 
+							type="button">Dados Empresa</button>
+				  </li>
+				  <li class="nav-item">
+					<button class="nav-link" 
+					        id="filial-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#filial"
+							type="button">Filial</button>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="empresa">Dados da Empresa...</div>
+				  <div class="tab-pane fade" id="filial">Dados da Filial...</div>
+				</div>
+			  
+			  
+				<div class="form-group">
+					<div class="row">
+						<!-- colunas -->
+						<div class="col-md-3">
+							<label>Código:</label>
+							<input type="text"
+								   id="ovTXT_Codigo"
+								   class="form-control" />
+						</div>
+						<div class="col-md-9">
+							<label>Descrição:</label>
+							<input type="text"
+								   id="ovTXT_Descricao"
+								   class="form-control" />
+						</div>
+					</div>
+				</div>
+				
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" 
+						class="btn btn-secondary"
+						data-bs-dismiss="modal">
+						<i class="fa fa-times"></i>
+						Fechar</button>
+				<button type="button"
+						id="ovBTN_Salvar"
+				        class="btn btn-primary">
+						<i class="fa fa-save"></i>
+						Salvar</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+			<h3>Formulário de Produtos</h3>
+			<div class="form-group pull-right">
+				<button type="button"
+				        id="ovBTN_Adicionar"
+				        class="btn btn-primary">
+						<i class="fa fa-red fa-cart-plus"></i>
+						Adicionar
+						</button>				
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-12">
+						<table id="ovTR_Dados" class="table">
+							<thead>
+								<th>Código</th>
+								<th>Descrição</th>
+								<th class="pull-right">Ações</th>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
